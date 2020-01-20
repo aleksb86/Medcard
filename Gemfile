@@ -8,6 +8,7 @@ gem 'dotenv-rails'
 gem 'jbuilder', '~> 2.7'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
+gem 'rack-cors'
 gem 'rails', '~> 6.0.2.rc2'
 gem 'webpacker', '~> 4.0'
 
@@ -15,6 +16,7 @@ group :development, :test do
   gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
   gem 'pry', '~> 0.12.2'
   gem 'pry-rails', '~> 0.3.9'
+  gem 'pry-remote'
 end
 
 group :development do

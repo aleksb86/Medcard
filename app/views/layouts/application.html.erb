@@ -5,15 +5,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%# <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= stylesheet_pack_tag 'application' %>
-    <%= javascript_pack_tag 'medcard' %>
+    <%= javascript_pack_tag 'application' %>
   </head>
 
   <body>
-    <button class="btn-info">
-      jaba
-    </button>
-    <%= yield %>
+    <div id="root"></div>
+    <footer class="w-full pin-b text-center border-t border-grey p-4">
+      Medcard <%= Time.current.year %>
+    </footer>
   </body>
 </html>
