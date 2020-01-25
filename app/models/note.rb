@@ -4,6 +4,7 @@ class Note < ApplicationRecord
   enum kind: %i[consultation examination]
   belongs_to :card
   belongs_to :category
+  belongs_to :user
   belongs_to :parent, class_name: 'Note'
   has_many :pdf_docs
   has_many :images

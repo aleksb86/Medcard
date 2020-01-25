@@ -30,4 +30,23 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  models:
+    categories:
+      cardiology: Cardiology
+      cosmetology: Cosmetology
+      dentistry: Dentistry
+      dermatology: Dermatology
+      gastroenterology: Gastroenterology
+      gynecology: Gynecology
+      immunology: Immunology
+      neurology: Neurology
+      ophthalmology: Ophthalmology
+      orthopedics: Orthopedics
+      otorhinolaryngology: Otorhinolaryngology
+      pediatrics: Pediatrics
+      physiotherapy: Physiotherapy
+      surgery: Surgery
+      therapy: Therapy
+      urology: Urology
+      vascular_surgery: Vascular surgery
+

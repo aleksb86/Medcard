@@ -1,0 +1,20 @@
+ru:
+  models:
+    categories:
+      cardiology: Кардиология
+      cosmetology: Косметология
+      dentistry: Стоматология
+      dermatology: Дерматология
+      gastroenterology: Гастроэнтерология
+      gynecology: Гинекология
+      immunology: Иммунология
+      neurology: Неврология
+      ophthalmology: Офтальмология
+      orthopedics: Ортопедия
+      otorhinolaryngology: ЛОР (отоларингология)
+      pediatrics: Педиатрия
+      physiotherapy: Психотерапия
+      surgery: Хирургия
+      therapy: Терапия
+      urology: Урология
+      vascular_surgery: Сосудистая хирургия

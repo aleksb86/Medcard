@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :cards, only: %i[index]
       resources :categories, only: %i[index show]
+
+      post 'user/token' => 'user_token#create'
+      get 'users/current' => 'users#current'
     end
   end
 

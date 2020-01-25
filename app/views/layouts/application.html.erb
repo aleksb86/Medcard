@@ -4,15 +4,12 @@
     <title>Medcard</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=1">
     <%= stylesheet_pack_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
   </head>
 
   <body>
     <div id="root"></div>
-    <footer class="w-full pin-b text-center border-t border-grey p-4">
-      Medcard <%= Time.current.year %>
-    </footer>
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>

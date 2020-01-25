@@ -7,4 +7,5 @@ class Card < ApplicationRecord
     third_positive third_negative fourth_positive fourth_negative
   ]
   has_many :notes
+  belongs_to :user
 end

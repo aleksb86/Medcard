@@ -1,27 +1,44 @@
-// Run this example by adding <%= javascript_pack_tag 'hello_react' %> to the head of your layout file,
-// like app/views/layouts/application.html.erb. All it does is render <div>Hello React</div> at the bottom
-// of the page.
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './navbar/NavbarWide';
+import Footer from './footer/Footer';
+import { Divider } from 'semantic-ui-react';
+import Home from './pages/Home';
+import HowToUse from './pages/HowToUse';
+import About from './pages/About';
 
-import React, {Component} from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from './navbar/Navbar';
-import { Routes } from './navbar/Routes';
+const left_items = [
+  { name: "Home", route: "/" },
+  { name: "How to use", route: "/how-to-use" },
+  { name: "About", route: "/about" }
+];
+
+const right_items = [
+  { name: "Log In", route: "/log_in" },
+  { name: "Sign In", route: "/sign_in" },
+  { name: "Log Out", route: "/log_out" }
+];
 
 export default class Medcard extends Component {
   render() {
     return (
-      <div>
-        <Router>
-          <header>
-            <Navbar serviceName="Medcard" />
-          </header>
-          <div className="flex flex-col h-full">
-            <div className="flex-1 container mx-auto p-8">
-              <Routes />
-            </div>
+      <Router>
+        <div className="content-wrapper">
+          <Navbar
+            routes={left_items}
+            right_items={right_items}
+            onItemClick={item => this.onItemClick(item)}
+          />
+          <div className="content">
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/how-to-use" component={HowToUse} />
+              <Route path="/about" component={About} />
+            </Switch>
           </div>
-        </Router>
-      </div>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

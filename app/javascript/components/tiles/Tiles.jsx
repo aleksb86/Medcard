@@ -27,6 +27,6 @@ class Tiles extends Component {
 }
 
 const Tile = ({category}) =>
-  <div color={category.color}>{category.name}</div>
+  <div>{category.name}</div>
 
 export default Tiles;
