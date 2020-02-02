@@ -1,18 +1,21 @@
-.content-wrapper {
+.sticky-content {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
-.ui.menu {
-  background-color: chocolate !important;
-}
-
-.hidden {
-  display: none !important;
+.sticky-content-mobile {
+  display: flex;
+  min-height: 88vh;
+  flex-direction: column;
 }
 
 .content {
   margin-top: 6em;
   flex: 1;
 }
+
+/* .ui.menu {
+  background-color: chocolate;
+} */
+
