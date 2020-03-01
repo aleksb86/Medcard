@@ -103,8 +103,8 @@ ActiveRecord::Schema.define(version: 2020_01_23_151226) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
-    t.string "phone", null: false
-    t.string "password_digest"
+    t.string "phone"
+    t.string "password_digest", null: false
     t.boolean "active", default: true, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

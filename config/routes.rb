@@ -4,12 +4,12 @@ Rails.application.routes.draw do
   root to: 'pages#index'
 
   namespace :api do
-    namespace :v1 do
+    namespace :v1, defaults: { format: :json } do
       resources :cards, only: %i[index]
       resources :categories, only: %i[index show]
 
       post 'user/token' => 'user_token#create'
-      get 'users/current' => 'users#current'
+      resources :users
     end
   end
 
